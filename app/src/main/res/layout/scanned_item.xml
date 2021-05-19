@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_DeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="裝置名稱"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/textView_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:text="位址"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_DeviceName"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/textView_Rssi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="16dp"
+        android:text="訊號強度"
+        app:layout_constraintStart_toEndOf="@id/textView_Address"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ButDetail"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginLeft="88dp"
+        android:background="#7084CD"
+        android:text="詳細內容"
+        android:textColor="#272222"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/textView_Address"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Rssi" />
+</android.support.constraint.ConstraintLayout>
+
